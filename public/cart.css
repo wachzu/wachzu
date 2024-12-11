@@ -1,0 +1,261 @@
+/*
+  Zachary Wu and Jordy Uribe
+  12/6/2024
+  AD Ella & Allison
+  This is the cart.css page which styles the cart view within our sportsxcel
+  website. This styling page does important things like storing the cart cards
+  within the user's cart and the subtotal sections. This will also allow users
+  to view a well-formatted checkout screen.
+*/
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 0px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.header-left h1 {
+  margin: 0 10px 0 0;
+}
+
+#bar {
+  flex: 1;
+  margin-right: 20px;
+  height: 24px;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+header h1 {
+  margin: 0;
+  margin-right: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.logo-link {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-link:visited, .logo-link:active {
+  color: white;
+}
+
+.logo-link:hover, .logo-link:focus {
+  outline: 2px solid white;
+  outline-offset: 0.5px;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+nav {
+  flex-shrink: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.cart-logo img {
+  width: 24px;
+  height: auto;
+  color: white;
+  margin-left: 5px;
+}
+
+section {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+.cart-item-blocks {
+  display: flex;
+  background-color: #f4f4f4;
+  justify-content: space-evenly;
+}
+
+.item {
+  display: flex;
+  border-style: solid;
+  border-color: #d3d3d3;
+  border-radius: 5px;
+  align-items: center;
+  margin: 10px;
+}
+
+.item img {
+  margin: 10px;
+}
+
+#cart-items, #checkout-information {
+  width: 70%;
+  margin-right: 20px;
+}
+
+.cart-header, #purchase-information {
+  font-size: 30px;
+}
+
+.subtotal {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.subtotal-block {
+  width: 25%;
+  text-align: center;
+  height: 125px;
+}
+
+#purchase-button, #checkout-btn, #back-cart-btn {
+  border-radius: 5px;
+  background-color: #ffd34e;
+  width: 50%;
+  margin: auto;
+  text-decoration: none;
+  font-size: 18px;
+  height: auto;
+}
+
+#back-cart-btn, #submit-purchase {
+  background-color: #00509e;
+  color: aliceblue;
+  margin-top: 10px;
+  font-size: 18px;
+  border-style: hidden;
+  border-radius: 5px;
+}
+
+.price {
+  margin-left: auto;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+.product-image-cart {
+  width: auto;
+  height: 100px;
+}
+
+.name {
+  margin-right: 15px;
+  text-align: center;
+}
+
+label {
+  font-size: 14pt;
+}
+
+#cardNum {
+  width: 100%;
+}
+
+#purchase-information {
+  width: 65%;
+  text-align: left;
+  font-size: 20px;
+}
+
+#purchase-information input {
+  width: 80%;
+  height: 20px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+#error {
+  text-align: center;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.noItems {
+  color: red;
+  font-size: 20px;
+}
+
+#checkout {
+  display: flex;
+}
+
+#success {
+  text-align: center;
+}
+
+#success-msg {
+  font-weight: bold;
+  font-size: 14pt;
+}
+
+#break-cart {
+  margin: 10px;
+}
+
+.trash {
+  width: 40px;
+  height: auto;
+}
+
+.change-quant {
+  display: flex;
+  flex-direction: column;
+  padding: 0px;
+  margin-right: 0px;
+}
+
+.change-quant button {
+  margin-left: auto;
+}
+
+.quantity {
+  margin-left: 15px;
+}
+
+.hidden {
+  display: none;
+}

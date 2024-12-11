@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<!--
+  Zachary Wu and Jordy Uribe
+  11/2/2024
+  Section: AD Allison and Ella
+  This is the account.html file, which handles the structure of the account view
+  on our website. This page has important sections like the user's information,
+  past purchases and posted products.
+  Image sources cited:
+  Success image from fadeawayworld.net
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsXcel - Your One-Stop Shop for Sports</title>
+    <link rel="stylesheet" href="account.css">
+    <script src="account.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <h1><a href="index.html" class="logo-link">SportsXcel</a></h1>
+      </div>
+    </header>
+    <main>
+      <section id="sign-in">
+        <h2>Sign In</h2>
+        <form id="sign-in-form">
+          <label for="email-sign-in">Email:</label>
+          <input type="email" id="email-sign-in" name="email" required>
+          <label for="password-sign-in">Password:</label>
+          <input type="text" id="password-sign-in" name="password" required>
+          <button>Sign In</button>
+        </form>
+        <p id="wrong-pswd" class="hidden">Incorrect password, try again!</p>
+        <p>Or</p>
+        <button id="create-account-btn">Create Account</button>
+      </section>
+
+      <section id="create-account" class="hidden">
+        <h2>Create Account</h2>
+        <form id="create-account-form">
+          <label for="name">Username:</label>
+          <input type="text" id="name2" name="name" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="password">Password:</label>
+          <input type="text" id="password" name="password" required>
+          <button>Create Account</button>
+        </form>
+        <p>Or</p>
+        <button id="sign-in-btn">Sign in</button>
+      </section>
+
+      <section id="account-view" class="hidden">
+        <h2>My Account</h2>
+        <hr>
+        <section>
+          <h3>Account Details</h3>
+          <div class="account-details">
+            <span><strong>Username:</strong></span>
+            <span id="user-name"></span><br>
+            <span><strong>Email:</strong></span>
+            <span id="user-email"></span><br>
+            <span><strong>Password:</strong></span>
+            <span id="pswd"></span><br>
+          </div>
+        </section>
+
+        <section>
+          <hr>
+          <h3 id="load-post-view">Post a product ▼</h3>
+          <hr>
+          <section id="post-form-container" class="hidden">
+            <form id="post-product">
+              <label for="name">Product Name:</label><br>
+              <input type="text" id="name" name="name" required><br>
+              <label for="image">Image Link:</label><br>
+              <input type="url" id="image" name="image" required><br>
+              <label for="price">Price:</label><br>
+              <input type="number" id="price" name="price" step="0.01" required><br>
+              <label for="stock">Stock:</label><br>
+              <input type="number" id="stock" name="stock" step="1" required><br>
+              <label for="sport">Sport:</label><br>
+              <input type="text" id="sport" name="sport"><br>
+              <label for="color">Color:</label><br>
+              <input type="text" id="color" name="color"><br>
+              <label for="gender">Gender:</label><br>
+              <input type="text" id="gender" name="gender" placeholder="male or female"><br>
+              <label for="brand">Brand:</label><br>
+              <input type="text" id="brand" name="brand"><br>
+              <label for="location">Location:</label><br>
+              <input type="text" id="location" name="location" placeholder="indoor or outdoor"><br>
+              <label for="type">Type:</label><br>
+              <input type="text" id="type" name="type" placeholder="cleats or court shoes"><br>
+              <button>Post Product</button>
+            </form>
+          </section>
+          <section id="success-container" class="hidden">
+            <article id="post-success" class="hidden">
+              <img src="images/success-post.png" alt="success-image">
+              <p>
+                Congrats on posting an item!
+              </p>
+            </article>
+          </section>
+        </section>
+
+        <section>
+          <hr>
+          <h3 id="load-posted">Posted products ▼</h3>
+          <hr>
+          <section id="past-posted" class="hidden">
+          </section>
+        </section>
+
+        <section id="all-transactions" class="past-transactions">
+          <hr>
+          <h3 id="load-transaction-view">Transactions</h3>
+          <hr>
+        </section>
+
+        <button id="sign-out-btn">Sign Out</button>
+      </section>
+      <section id="error" class="hidden">
+        <p id="error-msg"></p>
+        <p> For now, hit the home button (logo) to go back home</p>
+        <img src="images/error.png" alt="Error shoes image">
+      </section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,319 @@
+/*
+  Zachary Wu and Jordy Uribe
+  12/6/2024
+  AD Ella & Allison
+  This is the account.css page which styles the account view within our website.
+  It styles important sections including past purchases, posted products and user
+  information. It allows users to see all of their information in a clean, well
+  formatted way.
+*/
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 0px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.header-left h1 {
+  margin: 0 10px 0 0;
+}
+
+#bar {
+  flex: 1;
+  margin-right: 20px;
+  height: 24px;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+header h1 {
+  margin: 0;
+  margin-right: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.logo-link {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-link:visited, .logo-link:active {
+  color: white;
+}
+
+.logo-link:hover, .logo-link:focus {
+  outline: 2px solid white;
+  outline-offset: 0.5px;
+}
+
+nav {
+  flex-shrink: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.cart-logo img {
+  width: 24px;
+  height: auto;
+  color: white;
+  margin-left: 5px;
+}
+
+#sign-in, #create-account {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#sign-in h2, #create-account h2 {
+  margin-bottom: 20px;
+  color: #003366;
+}
+
+#sign-in form, #create-account form {
+  display: flex;
+  flex-direction: column;
+}
+
+#sign-in label, #create-account label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+#sign-in input, #create-account input {
+  margin-bottom: 15px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+#sign-in button, #create-account button {
+  padding: 10px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#sign-in button:hover, #create-account button:hover {
+  background-color: #00509e;
+}
+
+#success {
+  text-align: center;
+}
+
+#sign-in p, #create-account p {
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+#sign-in-btn, #create-account-btn {
+  width: 100%;
+  margin-top: 0px;
+}
+
+#error {
+  font-size: 20px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+#wrong-pswd {
+  color: red;
+}
+
+#error-msg {
+  font-weight: bold;
+}
+
+#error img {
+  width: 400px;
+  margin: 10px;
+  border-style: solid;
+  border-color: #003366;
+}
+
+#account-view {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#account-view h2 {
+  text-align: center;
+}
+
+#account-view span {
+  font-size: 14pt;
+  margin: 10px;
+}
+
+h3 {
+  font-size: 15pt;
+}
+
+.transaction {
+  background-color: #d3d3d3;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+
+.transaction img {
+  width: 40%;
+  border-radius: 5px;
+}
+
+.purchased-products {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.product img {
+  margin-bottom: 0px;
+  height: 80px;
+  width: auto;
+}
+
+.product {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.all-products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#sign-out-btn {
+  background-color: #00509e;
+  color: aliceblue;
+  font-size: 18px;
+  border-style: hidden;
+  border-radius: 5px;
+  width: 30%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+#post-product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#post-product label {
+  font-size: 13pt;
+  margin: auto;
+  margin-bottom: 0px;
+  padding: 0px;
+  width: 90%;
+}
+
+#post-product input {
+  margin: auto;
+  padding: 0px;
+  width: 90%;
+  margin-top: 0px;
+  height: 25px;
+}
+
+#post-product button {
+  width: 30%;
+  margin: auto;
+}
+
+#post-success {
+  font-size: 20pt;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#post-success img {
+  width: 65%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.post {
+  display: flex;
+  flex-direction: column;
+  background-color: #d3d3d3;
+  border-radius: 5px;
+  margin: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.post img {
+  height: 200px;
+  width: auto;
+  border-radius: 5px;
+}
+
+.post-name {
+  font-size: 18pt;
+  font-weight: bold;
+}
+
+.hidden {
+  display: none;
+}

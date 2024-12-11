@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+  Zachary Wu and Jordy Uribe
+  11/2/2024
+  Section: AD Allison and Ella
+  This is the products.html file, which handles all views regarding the products
+  themselves. This file will have important sections like the single product view
+  and the total product view. This is also where user-posted items will appear.
+  Image sources cited:
+  Product images came from the Dicks Sporting Goods website.
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportXcel - Your One-Stop Shop for Sports</title>
+    <link rel="stylesheet" href="products.css">
+    <script src="products.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+
+  <body>
+    <header>
+      <div class="header-left">
+        <h1><a href="index.html" class="logo-link">SportsXcel</a></h1>
+      </div>
+      <input id="bar" type="text" placeholder="What are you looking for? Hit enter to search!">
+      <nav>
+        <ul>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="account.html">Account</a></li>
+          <li>
+            <a class="cart-logo" href="cart.html">
+              <img src="images/cart.png" alt="Cart logo" class="logo-link">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Products</h2>
+      <button id="back-btn" class="hidden">Back</button>
+      <section id="filter-view">
+        <button id="show-filters">Show Filters</button>
+        <div id="filters-container" class="hidden">
+          <section id="filters">
+            <div>
+              <h3 id="brand"> Brand </h3>
+              <input type="radio" name="brandOptions" value="nike">Nike<br>
+              <input type="radio" name="brandOptions" value="new balance">New Balance<br>
+              <input type="radio" name="brandOptions" value="under armour">Under Amour<br>
+              <input type="radio" name="brandOptions" value="puma">Puma<br>
+            </div>
+            <div>
+              <h3 id="type"> Type of Shoe </h3>
+              <input type="radio" name="shoeOptions" value="cleats">Cleats<br>
+              <input type="radio" name="shoeOptions" value="court shoes">Court Shoes<br>
+              <input type="radio" name="shoeOptions" value="turf shoes">Turf Shoes<br>
+            </div>
+            <div>
+              <h3 id="sport"> Sport </h3>
+              <input type="radio" name="sportOptions" value="baseball">Baseball<br>
+              <input type="radio" name="sportOptions" value="basketball">Basketball<br>
+              <input type="radio" name="sportOptions" value="soccer">Soccer<br>
+            </div>
+            <div>
+              <h3 id="gender">Gender</h3>
+              <input type="radio" name="genderOptions" value="male">Men<br>
+              <input type="radio" name="genderOptions" value="female">Women<br>
+            </div>
+            <div>
+              <h3 id="location">Location</h3>
+              <input type="radio" name="locationOptions" value="outdoor">Outdoor<br>
+              <input type="radio" name="locationOptions" value="indoor">Indoor<br>
+              <input type="radio" name="locationOptions" value="indoor/outdoor">Indoor and Outdoor
+              <br>
+            </div>
+            <div>
+              <h3 id="color"> Color </h3>
+              <input type="radio" name="colorOptions" value="red">Red<br>
+              <input type="radio" name="colorOptions" value="blue">Blue<br>
+              <input type="radio" name="colorOptions" value="green">Green<br>
+              <input type="radio" name="colorOptions" value="orange">Orange<br>
+              <input type="radio" name="colorOptions" value="purple">Purple<br>
+              <input type="radio" name="colorOptions" value="grey">Grey<br>
+              <input type="radio" name="colorOptions" value="white">White<br>
+              <input type="radio" name="colorOptions" value="black">Black<br>
+            </div>
+          </section>
+          <article id="buttons-filter">
+            <button id="filter-btn">Submit Filters</button>
+            <button id="clear-filters">Clear Filters</button>
+            <button id="hide-filters">Hide Filters</button>
+          </article>
+        </div>
+      </section>
+      <p id="toggle-btn-container">
+        <button id="toggle-view">Toggle Views</button>
+      </p>
+      <div id="product-view-container">
+        <section id="product-view">
+        </section>
+      </div>
+      <section id="product-view-list" class="hidden">
+      </section>
+      <div id="single-product-container" class="hidden">
+        <section id="single-product-view">
+        </section>
+      </div>
+      <section id="error" class="hidden">
+        Something went wrong! Try again later, for now go back to the home page.
+      </section>
+    </main>
+  </body>
+</html>

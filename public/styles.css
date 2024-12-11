@@ -1,0 +1,189 @@
+/*
+  Zachary Wu and Jordy Uribe
+  12/6/2024
+  AD Ella & Allison
+  This is the style.css page which styles our main page within our sportsxcel website.
+  This page provides important styling for our website, including styling for our
+  heading, products section and about section of our home page.
+*/
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 0px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.header-left h1 {
+  margin: 0 10px 0 0;
+}
+
+#bar {
+  flex: 1;
+  margin-right: 20px;
+  height: 24px;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+header h1 {
+  margin: 0;
+  margin-right: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.logo-link {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-link:visited, .logo-link:active {
+  color: white;
+}
+
+.logo-link:hover, .logo-link:focus {
+  outline: 2px solid white;
+  outline-offset: 0.5px;
+}
+
+nav {
+  flex-shrink: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.cart-logo img {
+  width: 24px;
+  height: auto;
+  color: white;
+  margin-left: 5px;
+}
+
+/* Main Styles */
+main {
+  padding: 20px;
+}
+
+section {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+#home {
+  background-color: #b4c5e4;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#home section {
+  background-color: #b4c5e4;
+}
+
+#home img {
+  height: 150px;
+  width: 85px;
+  margin: 40px;
+}
+
+#products {
+  background-color: #d3d3d3;
+}
+
+.product-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-type {
+  margin: 15px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #f5f5f5;
+  transition: transform 0.3s ease;
+}
+
+#about {
+  background-color: #ffe4e1;
+}
+
+#contact {
+  background-color: #b4c5e4;
+}
+
+header a {
+  color: aliceblue;
+  padding: 5px;
+  text-decoration: none;
+}
+
+#information {
+  width: 450px;
+  height: 550px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.home-image {
+  width: 400px;
+  height: 250px;
+}
+
+#welcome {
+  font-size: 30pt;
+}
+
+#welcome-msg {
+  font-size: 20pt;
+}
+
+.hidden {
+  display: none;
+}

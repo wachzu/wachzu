@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+  Zachary Wu and Jordy Uribe
+  11/2/2024
+  Section: AD Allison and Ella
+  This is the index.html file which handles the structure of the home page on our
+  website. This page loads the main view, and has important structural elements
+  like the header and nav bar.
+  Image sources cited:
+  Sports Illustrated, RunRepeat.com, ClipartMax.com
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SportsXcel - Your One-Stop Shop for Sports</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+
+  <body>
+    <header>
+      <div class="header-left">
+        <h1><a href="index.html" class="logo-link">SportsXcel</a></h1>
+      </div>
+      <input id="bar" type="text" placeholder="What are you looking for? Hit enter to search!">
+      <nav>
+        <ul>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="account.html">Account</a></li>
+          <li>
+            <a class="cart-logo" href="cart.html">
+              <img src="images/cart.png" alt="Cart logo" class="logo-link">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="home">
+        <img src="images/basketball-shadow.png" alt="shooter shadow">
+        <section>
+          <h2 id="welcome">Welcome to SportsXcel</h2>
+          <p id="welcome-msg">Your one-stop shop for athletic shoes.</p>
+        </section>
+        <img src="images/batter.png" alt="batter shadow">
+      </section>
+      <section id="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+          <div id="basketball" class="product-type">
+            <img src="images/basketball-shoes.png" alt="Basketball Shoes" class="home-image">
+            <h3>Basketball Shoes</h3>
+            <p>High-quality court shoes for any hooping needs.</p>
+          </div>
+          <div id="baseball" class="product-type">
+            <img src="images/baseball-cleats.png" alt="Baseball Cleats" class="home-image">
+            <h3>Baseball Shoes</h3>
+            <p>Top-notch cleats and turf shoes for anything baseball.</p>
+          </div>
+          <div id="soccer" class="product-type">
+            <img src="images/soccer-cleats.png" alt="Soccer Cleats" class="home-image">
+            <h3>Soccer Cleats</h3>
+            <p>The best cleats available for when you're on the pitch!</p>
+          </div>
+        </div>
+      </section>
+      <section id="about">
+        <h2>About Us</h2>
+        <p>We are Zach Wu and Jordy Uribe, students of CSE 154 at the University of Washington.</p>
+      </section>
+      <section id="contact">
+        To contact us, email zachwu5@uw.edu
+      </section>
+    </main>
+  </body>
+</html>

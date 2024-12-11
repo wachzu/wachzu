@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--
+  Zachary Wu and Jordy Uribe
+  11/2/2024
+  Section: AD Allison and Ella
+  This is the cart page which allows users to view the items in their cart and purchase
+  what they have in their cart. It will have a variety of views, including the checkout,
+  the purchase view and the success view. Through JS and CSS, it will load up the cart
+  views and more.
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="cart.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="cart.js"></script>
+    <title>Cart</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lora:ital,wght@0,400..700;1,400..700&family=Oswald:wght@200..700&family=Share+Tech+Mono&display=swap"
+      rel="stylesheet"
+    >
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <h1><a href="index.html" class="logo-link">SportsXcel</a></h1>
+      </div>
+      <input id="bar" type="text" placeholder="What are you looking for? Hit enter to search!">
+      <nav>
+        <ul>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="account.html">Account</a></li>
+          <li>
+            <a class="cart-logo" href="cart.html">
+              <img src="images/cart.png" alt="Cart logo" class="logo-link">
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="cart-view" class="cart-item-blocks">
+        <h2 class="cart-header">Shopping Cart</h2>
+        <hr id="break-cart">
+        <section id="cart-items">
+        </section>
+        <section class="subtotal-block">
+          <p id="subtotal-num" class="subtotal"></p>
+          <article id="purchase-button">Confirm Order</article>
+        </section>
+      </section>
+      <section id="checkout-container" class="hidden">
+        <section id="checkout" class="hidden">
+          <section id="purchase-information">
+            <h2 class="cart-header">Purchase Information</h2>
+            <hr>
+            <form id="payment-info">
+              <h3>Delivery</h3>
+              <label for="shipping-location">Enter Shipping Address</label><br>
+              <input type="text" id="shipping-location" required><br>
+              <label for="zipcode">Enter zipcode (5 digits)</label><br>
+              <input type="text" id="zipcode" name="zipcode" required><br>
+              <h3>Payment Details</h3>
+              <label for="card-num">Credit Card Number (16 digits)</label><br>
+              <input type="text" id="card-num" name="card-num" required><br>
+              <label for="cvv">CVV (3 digits)</label><br>
+              <input type="text" id="cvv" name="cvv" required><br>
+              <button id="submit-purchase">Submit Purchase</button>
+            </form>
+          </section>
+          <section class="subtotal-block">
+            <p id="subtotal-num2" class="subtotal"></p>
+            <article id="back-cart-btn">Back to cart</article>
+          </section>
+        </section>
+      </section>
+      <section id="success-container" class="hidden">
+        <section id="success">
+          <h2>Congrats on your purchase!</h2>
+          <p id="success-msg"></p>
+        </section>
+      </section>
+      <section id="error" class="hidden">
+        <p id="error-message"></p>
+      </section>
+    </main>
+  </body>
+</html>

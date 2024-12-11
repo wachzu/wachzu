@@ -1,0 +1,252 @@
+/*
+  Zachary Wu and Jordy Uribe
+  12/6/2024
+  AD Ella & Allison
+  This is the products.css page which provides the styles for our products page
+  in our website. It allows us to style the list versus grid view in our product
+  page as well as the single product view. Additionally, it has important styles
+  for the header and filters.
+*/
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-bottom: 0px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+}
+
+.header-left h1 {
+  margin: 0 10px 0 0;
+}
+
+#bar {
+  flex: 1;
+  margin-right: 20px;
+  height: 24px;
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+header h1 {
+  margin: 0;
+  margin-right: 100px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.logo-link {
+  color: white;
+  text-decoration: none;
+}
+
+.logo-link:visited, .logo-link:active {
+  color: white;
+}
+
+.logo-link:hover, .logo-link:focus {
+  outline: 2px solid white;
+  outline-offset: 0.5px;
+}
+
+h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+nav {
+  flex-shrink: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+.cart-logo img {
+  width: 24px;
+  height: auto;
+  color: white;
+  margin-left: 5px;
+}
+
+section {
+  margin: 20px 0;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+#product-view, #single-product-view {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#product-view {
+  flex-wrap: wrap;
+}
+
+.multiple-products {
+  width: 225px;
+  height: 125px;
+}
+
+.card {
+  margin: 20px;
+  background-color: #D3D3D3;
+  border-radius: 10px;
+  border-color: navy;
+  padding: 10px;
+}
+
+.single-overview {
+  text-align: center;
+}
+
+.single-product-information {
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.single-product {
+  margin: 20px;
+  margin-top: 200px;
+  width: auto;
+  height: 300px;
+}
+
+#add-cart {
+  border-radius: 10px;
+  background-color: #ffd34e;
+  width: 30%;
+  height: auto;
+  margin: auto;
+  padding: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+#back-btn {
+  margin-left: 20px;
+}
+
+.price {
+  font-size: 20pt;
+  font-weight: bold;
+}
+
+#prodInfo {
+  margin-bottom: 50px;
+  justify-content: center;
+}
+
+table, th, td {
+  border: 1px solid;
+}
+
+hr {
+  align-self: stretch;
+  width: 100%;
+}
+
+#filters {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+#filter-btn, #clear-filters, #hide-filters {
+  height: 20px;
+  width: auto;
+  margin: 10px;
+}
+
+#buttons-filter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#back-btn, #show-filters, #filter-btn, #clear-filters, #hide-filters {
+  background-color: #00509e;
+  color: aliceblue;
+  margin-top: 10px;
+  font-size: 18px;
+  border-style: hidden;
+  border-radius: 5px;
+}
+
+.card-product-list {
+  display: flex;
+  background-color: #d3d3d3;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 20pt;
+  width: 85%;
+  margin: auto;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.card-product-list-image {
+  width: 150px;
+  height: auto;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.card-product-list-price {
+  margin-left: auto;
+  margin-right: 15px;
+  text-align: right;
+}
+
+#toggle-btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+}
